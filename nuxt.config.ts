@@ -1,14 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
+    "@pinia/nuxt",
+    "@vueuse/nuxt",
+    "@nuxt/image",
     "@nuxt/content",
-    "@nuxtseo/module",
+    "nuxt-delay-hydration",
     "@unlighthouse/nuxt",
     "@nuxt/devtools",
     "@nuxtjs/tailwindcss",
-    "@nuxt/image",
+    "nuxt-content-assets",
     "@nuxthq/studio",
-    "nuxt-swiper",
+    "@nuxtseo/module",
   ],
   content: {
     // ... options
