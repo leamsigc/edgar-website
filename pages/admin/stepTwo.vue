@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { HeaderColumns } from "~/composables/ComposableTable";
+
 /**
  *
  * Step 2 Let user select the urls that we need to use to generate the SEO juice
@@ -10,11 +12,21 @@
  * @todo [ ] Integration test.
  * @todo [✔] Update the typescript.
  */
+
+interface SITEMAP {
+  url: string;
+  title: string;
+  priority: number;
+}
 const seoPagesStore = useSeoPages();
 const { siteMap } = storeToRefs(seoPagesStore);
+
+const header = HeaderColumns<SITEMAP>();
 </script>
 
 <template>
-  <div>content</div>
+  <div>
+    <DataTable :header="header" :data="[]" />
+  </div>
 </template>
 <style scoped></style>

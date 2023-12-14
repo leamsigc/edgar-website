@@ -31,6 +31,7 @@
   "dependencies": {
     "@nuxt/content": "^2.9.0",
     "@radix-icons/vue": "^1.0.0",
+    "@tanstack/vue-table": "^8.10.7",
     "@vueuse/core": "^10.7.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
