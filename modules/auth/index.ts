@@ -12,7 +12,7 @@ export default defineNuxtModule({
     // Add an API route
     addServerHandler({
       route: "/api/auth/login",
-      handler: resolve("./api/auth/login"),
+      handler: resolve("./api/auth/login.post.ts"),
     });
   },
 });
