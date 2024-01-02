@@ -1,4 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+import { createResolver } from "@nuxt/kit";
+const { resolve } = createResolver(import.meta.url);
+
 export default defineNuxtConfig({
   modules: [
     "@pinia/nuxt",
@@ -8,13 +12,15 @@ export default defineNuxtConfig({
     "@unlighthouse/nuxt",
     "@nuxt/devtools",
     "@nuxtjs/tailwindcss",
-    "@nuxtjs/color-mode",
     "nuxt-content-assets",
     "@nuxt/content",
     "nuxt-icons",
     "@nuxthq/studio",
     "@nuxtseo/module",
+    "@nuxtjs/color-mode",
   ],
+  alias: { "@": resolve("./") },
+  components: [{ path: "@/components", prefix: "" }],
   nitro: {
     experimental: {
       openAPI: true,
@@ -25,6 +31,7 @@ export default defineNuxtConfig({
     documentDriven: true,
   },
   devtools: { enabled: true },
+  css: ["~/assets/scss/main.scss"],
   site: {
     url: "https://example.com",
     name: "Jahaziel's Carpentry & Painting",
@@ -55,6 +62,7 @@ export default defineNuxtConfig({
       });
     },
   },
+
   colorMode: {
     classSuffix: "",
   },

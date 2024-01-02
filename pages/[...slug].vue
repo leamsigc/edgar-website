@@ -13,10 +13,10 @@
 const { page } = useContent();
 // console.log(page.value);
 
-defineOgImage({
-  title: page.value?.title,
-  description: page.value?.description,
-});
+// defineOgImage({
+//   title: page.value?.title,
+//   description: page.value?.description,
+// });
 </script>
 
 <template>

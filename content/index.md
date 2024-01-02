@@ -29,6 +29,11 @@ head:
 
 ---
 
+
+
+
+
+
 ::HeroComponent
 ---
 alt: "Transform Your Home with Jahaziel's Craftsmanship"

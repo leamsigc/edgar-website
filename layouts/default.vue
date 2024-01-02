@@ -13,9 +13,7 @@
 </script>
 
 <template>
-  <div
-    class="min-h-screen flex flex-col bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50"
-  >
+  <div class="min-h-screen flex flex-col bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50">
     <HeaderNav />
     <slot />
   </div>

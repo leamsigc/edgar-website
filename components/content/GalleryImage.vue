@@ -43,21 +43,10 @@ const onBeforeSlide = () => {
 
 <template>
   <section class="max-w-screen-2xl mx-auto px-14 py-20">
-    <lightgallery
-      :settings="{ speed: 500, plugins: plugins, pager: false, thumbnail: false }"
-      :onInit="onInit"
-      :onBeforeSlide="onBeforeSlide"
-      class="grid grid-cols-4 gap-5"
-    >
-      <a
-        v-for="item in images"
-        :key="item.id"
-        :data-lg-size="item.size"
-        class="gallery-item"
-        :data-src="item.src"
-        :data-tweet-text="item.alt"
-        :data-sub-html="item.html"
-      >
+    <lightgallery :settings="{ speed: 500, plugins: plugins, pager: false, thumbnail: false }" :onInit="onInit"
+      :onBeforeSlide="onBeforeSlide" class="grid grid-cols-4 gap-5">
+      <a v-for="item in images" :key="item.id" :data-lg-size="item.size" class="gallery-item" :data-src="item.src"
+        :data-tweet-text="item.alt" :data-sub-html="item.html">
         <img class="img-responsive" :src="item.thumb" :alt="item.alt" />
       </a>
     </lightgallery>

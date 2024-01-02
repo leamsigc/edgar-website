@@ -114,4 +114,3 @@ const servicesOptions = [
     </header>
   </div>
 </template>
-~/components/content/ui/navigation-menu
