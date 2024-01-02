@@ -35,16 +35,8 @@ async function onSubmit(event: Event) {
       <div class="grid gap-2">
         <div class="grid gap-1">
           <Label class="sr-only" for="url"> Target URL: </Label>
-          <Input
-            id="url"
-            placeholder="https://example.com"
-            type="url"
-            v-model="url"
-            auto-capitalize="none"
-            auto-complete="url"
-            auto-correct="off"
-            :disabled="isLoading"
-          />
+          <Input id="url" placeholder="https://example.com" type="url" v-model="url" auto-capitalize="none"
+            auto-complete="url" auto-correct="off" :disabled="isLoading" />
         </div>
         <Button :disabled="isLoading"> Get SEO juice </Button>
       </div>

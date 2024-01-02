@@ -4,15 +4,16 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@vueuse/nuxt",
     "@nuxt/image",
-    "@nuxt/content",
     "nuxt-delay-hydration",
     "@unlighthouse/nuxt",
     "@nuxt/devtools",
     "@nuxtjs/tailwindcss",
+    "@nuxtjs/color-mode",
     "nuxt-content-assets",
+    "@nuxt/content",
+    "nuxt-icons",
     "@nuxthq/studio",
     "@nuxtseo/module",
-    "@nuxtjs/color-mode",
   ],
   nitro: {
     experimental: {
@@ -44,15 +45,18 @@ export default defineNuxtConfig({
   hooks: {
     "components:dirs": (dirs) => {
       dirs.unshift({
-        path: "~/components/ui",
+        path: "~/components/content/ui",
         // this is required else Nuxt will autoImport `.ts` file
         extensions: [".vue"],
         // prefix for your components, eg: UiButton
-        prefix: "Ui",
+        prefix: "",
         // prevent adding another prefix component by it's path.
         pathPrefix: false,
       });
     },
+  },
+  colorMode: {
+    classSuffix: "",
   },
   typescript: {
     shim: false,

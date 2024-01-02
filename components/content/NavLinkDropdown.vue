@@ -38,12 +38,7 @@ const { label, listItems } = toRefs(props);
     <NavigationMenuContent>
       <ul class="grid w-96 gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
         <slot name="before" />
-        <ListItem
-          v-for="component in listItems"
-          :key="component.title"
-          :title="component.title"
-          :href="component.href"
-        >
+        <ListItem v-for="component in listItems" :key="component.title" :title="component.title" :href="component.href">
           {{ component.description }}
         </ListItem>
         <slot name="after" />

@@ -30,6 +30,10 @@ head:
 ---
 
 ::HeroComponent
+---
+alt: "Transform Your Home with Jahaziel's Craftsmanship"
+heroImageUrl: /img/nav_image_1.png
+---
 ::
 
 
