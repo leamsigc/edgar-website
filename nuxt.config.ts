@@ -12,7 +12,13 @@ export default defineNuxtConfig({
     "nuxt-content-assets",
     "@nuxthq/studio",
     "@nuxtseo/module",
+    "@nuxtjs/color-mode",
   ],
+  nitro: {
+    experimental: {
+      openAPI: true,
+    },
+  },
   content: {
     // ... options
     documentDriven: true,

@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script lang="ts" setup generic="T">
 /**
  *
  * Component Description:Desc
@@ -30,7 +30,7 @@ import { valueUpdater } from "@/lib/utils";
 interface Props {
   caption?: string;
   data: [];
-  columns: ColumnDef<{}>[];
+  columns: ColumnDef<T>[];
 }
 
 const props = defineProps<Props>();
@@ -60,10 +60,12 @@ const table = useVueTable({
   },
   enableRowSelection: true,
   onSortingChange: (updaterOrValue) => valueUpdater(updaterOrValue, sorting),
-  onColumnFiltersChange: (updaterOrValue) => valueUpdater(updaterOrValue, columnFilters),
+  onColumnFiltersChange: (updaterOrValue) =>
+    valueUpdater(updaterOrValue, columnFilters),
   onColumnVisibilityChange: (updaterOrValue) =>
     valueUpdater(updaterOrValue, columnVisibility),
-  onRowSelectionChange: (updaterOrValue) => valueUpdater(updaterOrValue, rowSelection),
+  onRowSelectionChange: (updaterOrValue) =>
+    valueUpdater(updaterOrValue, rowSelection),
   getCoreRowModel: getCoreRowModel(),
   getFilteredRowModel: getFilteredRowModel(),
   getPaginationRowModel: getPaginationRowModel(),
@@ -79,7 +81,10 @@ const table = useVueTable({
     <div class="rounded-md border">
       <Table>
         <TableHeader>
-          <TableRow v-for="headerGroup in table.getHeaderGroups()" :key="headerGroup.id">
+          <TableRow
+            v-for="headerGroup in table.getHeaderGroups()"
+            :key="headerGroup.id"
+          >
             <TableHead v-for="header in headerGroup.headers" :key="header.id">
               <FlexRender
                 v-if="!header.isPlaceholder"

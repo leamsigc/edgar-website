@@ -52,6 +52,9 @@ devDependencies:
   '@nuxthq/studio':
     specifier: ^1.0.4
     version: 1.0.4
+  '@nuxtjs/color-mode':
+    specifier: ^3.3.2
+    version: 3.3.2
   '@nuxtjs/tailwindcss':
     specifier: ^6.9.5
     version: 6.9.5(webpack@5.89.0)

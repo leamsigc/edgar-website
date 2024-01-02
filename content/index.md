@@ -29,6 +29,11 @@ head:
 
 ---
 
+::HeroComponent
+::
+
+
+
 ::HeroMain
 ---
 title: Transform Your Home with Jahaziel's Craftsmanship
@@ -48,7 +53,7 @@ CTAHelper: with Jahaziel's for skilled craftsmanship and a burst of creativity.
 images:
     - 
         id: 1;
-        src: https://images.unsplash.com/photo-1585338447937-7082f8fc763d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80
+        src: https://happy-paws-with-nuxt-tailwindcss.netlify.app/_ipx/w_768/https://images.unsplash.com/photo-1534361960057-19889db9621e%3Fixid=MnwyMDkyMnwwfDF8c2VhcmNofDMwfHxkb2d8ZW58MHx8fHwxNjgzMjc1MDI1%26ixlib=rb-4.0.3q=85%26fm=jpg%26crop=faces%26cs=srgb%26w=2000%26fit=crop%20768w
         size: 1600-2400
         thumb: https://images.unsplash.com/photo-1585338447937-7082f8fc763d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80
         alt: lightGallery slide  4
@@ -58,7 +63,7 @@ images:
                 A swan on a calm misty lake in the mountains of Snowdonia, North Wales. <a href='https://unsplash.com/photos/9V6EkAoTWJM'>Link</a> </p>
     - 
         id: 1;
-        src: https://images.unsplash.com/photo-1585338447937-7082f8fc763d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80
+        src: https://happy-paws-with-nuxt-tailwindcss.netlify.app/_ipx/w_768/https://images.unsplash.com/photo-1534361960057-19889db9621e%3Fixid=MnwyMDkyMnwwfDF8c2VhcmNofDMwfHxkb2d8ZW58MHx8fHwxNjgzMjc1MDI1%26ixlib=rb-4.0.3q=85%26fm=jpg%26crop=faces%26cs=srgb%26w=2000%26fit=crop%20768w
         size: 1600-2400
         thumb: https://images.unsplash.com/photo-1585338447937-7082f8fc763d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80
         alt: lightGallery slide  4
@@ -68,7 +73,7 @@ images:
                 A swan on a calm misty lake in the mountains of Snowdonia, North Wales. <a href='https://unsplash.com/photos/9V6EkAoTWJM'>Link</a> </p>
     - 
         id: 1;
-        src: https://images.unsplash.com/photo-1585338447937-7082f8fc763d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80
+        src: https://happy-paws-with-nuxt-tailwindcss.netlify.app/_ipx/w_768/https://images.unsplash.com/photo-1534361960057-19889db9621e%3Fixid=MnwyMDkyMnwwfDF8c2VhcmNofDMwfHxkb2d8ZW58MHx8fHwxNjgzMjc1MDI1%26ixlib=rb-4.0.3q=85%26fm=jpg%26crop=faces%26cs=srgb%26w=2000%26fit=crop%20768w
         size: 1600-2400
         thumb: https://images.unsplash.com/photo-1585338447937-7082f8fc763d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80
         alt: lightGallery slide  4
@@ -78,7 +83,7 @@ images:
                 A swan on a calm misty lake in the mountains of Snowdonia, North Wales. <a href='https://unsplash.com/photos/9V6EkAoTWJM'>Link</a> </p>
     - 
         id: 1;
-        src: https://images.unsplash.com/photo-1585338447937-7082f8fc763d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80
+        src: https://happy-paws-with-nuxt-tailwindcss.netlify.app/_ipx/w_768/https://images.unsplash.com/photo-1534361960057-19889db9621e%3Fixid=MnwyMDkyMnwwfDF8c2VhcmNofDMwfHxkb2d8ZW58MHx8fHwxNjgzMjc1MDI1%26ixlib=rb-4.0.3q=85%26fm=jpg%26crop=faces%26cs=srgb%26w=2000%26fit=crop%20768w
         size: 1600-2400
         thumb: https://images.unsplash.com/photo-1585338447937-7082f8fc763d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80
         alt: lightGallery slide  4
@@ -88,7 +93,7 @@ images:
                 A swan on a calm misty lake in the mountains of Snowdonia, North Wales. <a href='https://unsplash.com/photos/9V6EkAoTWJM'>Link</a> </p>
     - 
         id: 1;
-        src: https://images.unsplash.com/photo-1585338447937-7082f8fc763d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80
+        src: https://happy-paws-with-nuxt-tailwindcss.netlify.app/_ipx/w_768/https://images.unsplash.com/photo-1534361960057-19889db9621e%3Fixid=MnwyMDkyMnwwfDF8c2VhcmNofDMwfHxkb2d8ZW58MHx8fHwxNjgzMjc1MDI1%26ixlib=rb-4.0.3q=85%26fm=jpg%26crop=faces%26cs=srgb%26w=2000%26fit=crop%20768w
         size: 1600-2400
         thumb: https://images.unsplash.com/photo-1585338447937-7082f8fc763d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80
         alt: lightGallery slide  4
@@ -98,7 +103,7 @@ images:
                 A swan on a calm misty lake in the mountains of Snowdonia, North Wales. <a href='https://unsplash.com/photos/9V6EkAoTWJM'>Link</a> </p>
     - 
         id: 1;
-        src: https://images.unsplash.com/photo-1585338447937-7082f8fc763d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80
+        src: https://happy-paws-with-nuxt-tailwindcss.netlify.app/_ipx/w_768/https://images.unsplash.com/photo-1534361960057-19889db9621e%3Fixid=MnwyMDkyMnwwfDF8c2VhcmNofDMwfHxkb2d8ZW58MHx8fHwxNjgzMjc1MDI1%26ixlib=rb-4.0.3q=85%26fm=jpg%26crop=faces%26cs=srgb%26w=2000%26fit=crop%20768w
         size: 1536-2304
         thumb: https://images.unsplash.com/photo-1585338447937-7082f8fc763d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80
         alt: lightGallery slide  4
@@ -108,7 +113,7 @@ images:
                 A swan on a calm misty lake in the mountains of Snowdonia, North Wales. <a href='https://unsplash.com/photos/9V6EkAoTWJM'>Link</a> </p>
     - 
         id: 1;
-        src: https://images.unsplash.com/photo-1585338447937-7082f8fc763d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80
+        src: https://happy-paws-with-nuxt-tailwindcss.netlify.app/_ipx/w_768/https://images.unsplash.com/photo-1534361960057-19889db9621e%3Fixid=MnwyMDkyMnwwfDF8c2VhcmNofDMwfHxkb2d8ZW58MHx8fHwxNjgzMjc1MDI1%26ixlib=rb-4.0.3q=85%26fm=jpg%26crop=faces%26cs=srgb%26w=2000%26fit=crop%20768w
         size: 1536-2304
         thumb: https://images.unsplash.com/photo-1585338447937-7082f8fc763d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80
         alt: lightGallery slide  4

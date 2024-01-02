@@ -97,11 +97,8 @@ const servicesOptions = [
               <NavLinkDropdown label="Getting started" :listItems="servicesOptions">
                 <template #before>
                   <li class="row-span-3">
-                    <NavLinkCardChild
-                      to="/"
-                      title="Commercial Painting"
-                      description="Interior & exterior painting services"
-                    >
+                    <NavLinkCardChild to="/" title="Commercial Painting"
+                      description="Interior & exterior painting services">
                       <img src="/img/nav_image_1.png" alt="Exterior Painting" />
                     </NavLinkCardChild>
                   </li>
@@ -111,6 +108,7 @@ const servicesOptions = [
               <NavLinkMain to="/contact" label="Contact" />
             </NavigationMenuList>
           </NavigationMenu>
+          <ThemeSwitcher class="dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300" />
         </div>
       </div>
     </header>

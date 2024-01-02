@@ -26,7 +26,7 @@ const header = HeaderColumns<SITEMAP>();
 
 <template>
   <div>
-    <DataTable :header="header" :data="[]" />
+    <DataTable :data="[]" :columns="header" />
   </div>
 </template>
 <style scoped></style>
