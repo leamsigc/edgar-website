@@ -98,7 +98,7 @@ subTitle:  What our Clients Say
 description: Testimonials from our happy clients, we are happy when our client is happy.
 items:
     -
-        desc: /about
+        desc: Small 
         title: Title here
         alt: Alt here
         imgSrc: /img/nav_image_1.png
