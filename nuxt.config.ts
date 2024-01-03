@@ -19,6 +19,7 @@ export default defineNuxtConfig({
     "@nuxtseo/module",
     "@nuxtjs/color-mode",
     "nuxt-icon",
+    "nuxt-swiper",
   ],
   nitro: {
     experimental: {

@@ -58,6 +58,50 @@ cards:
         title: Title here
         alt: Alt here
         imgSrc: /img/nav_image_1.png
+    -
+        targetUrl: /about
+        date: Dec,20,2024
+        title: Title here
+        alt: Alt here
+        imgSrc: /img/nav_image_1.png
+    -
+        targetUrl: /about
+        date: Dec,20,2024
+        title: Title here
+        alt: Alt here
+        imgSrc: /img/nav_image_1.png
+    -
+        targetUrl: /about
+        date: Dec,20,2024
+        title: Title here
+        alt: Alt here
+        imgSrc: /img/nav_image_1.png
+    -
+        targetUrl: /about
+        date: Dec,20,2024
+        title: Title here
+        alt: Alt here
+        imgSrc: /img/nav_image_1.png
+    -
+        targetUrl: /about
+        date: Dec,20,2024
+        title: Title here
+        alt: Alt here
+        imgSrc: /img/nav_image_1.png
+---
+::
+
+::Testimonials
+---
+title:  Testimonials
+subTitle:  What our Clients Say  
+description: Testimonials from our happy clients, we are happy when our client is happy.
+items:
+    -
+        desc: /about
+        title: Title here
+        alt: Alt here
+        imgSrc: /img/nav_image_1.png
 ---
 ::
 
