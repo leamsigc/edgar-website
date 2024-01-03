@@ -30,34 +30,40 @@ head:
 ---
 
 
-
-
-
-
-::HeroComponent
+::Hero-component
 ---
 alt: "Transform Your Home with Jahaziel's Craftsmanship"
 heroImageUrl: /img/nav_image_1.png
+title: "Transform Your Home with Jahaziel's Craftsmanship"
+subTitle: "Discover the magic of Jahaziel's Carpentry & Painting. From precise carpentry  that shapes your spaces to lively painting that brings your walls to life, we're here to turn your homeownership dreams into reality."
+---
+<a href='tel:+1-555-555-5555'>
+    <span class="inline-block mr-5 p-1.5 text-xl uppercase font-black">Call now </span>
+     <Icon name="material-symbols:call-end" class="mb-1" size="24" />
+</a>
+::
+
+<div class='mt-10'></div>
+
+::Show-Case
+---
+title:  Our Blogs
+subTitle:  Our Recent News 
+description: There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form. 
+
+cards:
+    -
+        targetUrl: /about
+        date: Dec,20,2024
+        title: Title here
+        alt: Alt here
+        imgSrc: /img/nav_image_1.png
 ---
 ::
 
 
 
-::HeroMain
----
-title: Transform Your Home with Jahaziel's Craftsmanship
-subTitle: Discover the magic of Jahaziel's Carpentry & Painting. From precise carpentry  that shapes your spaces to lively painting that brings your walls to life, we're here to turn your homeownership dreams into reality.
-CTATitle: Ready to Enhance Your Home?
-CTAUrl: tel:+1-555-555-5555
-CTALabel: Get Started
-CTAHelper: with Jahaziel's for skilled craftsmanship and a burst of creativity.
----
-<img class="grow" src="/img/nav_image_1.png" />
-::
-
-
-
-::GalleryImage
+::Gallery-image
 ---
 images:
     - 

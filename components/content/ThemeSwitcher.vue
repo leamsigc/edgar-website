@@ -21,11 +21,11 @@ const onClick = () =>
     <button aria-label="Color Mode" class="inline-block w-5" @click="onClick">
         <ColorScheme placeholder="...">
             <template v-if="colorMode.value === 'dark'">
-                <NuxtIcon name="dark-mode" class="w-5 h-5" />
+                <Icon name="dark-mode" class="w-5 h-5" />
                 <span class="sr-only">Dark Mode</span>
             </template>
             <template v-else>
-                <NuxtIcon name="light-mode" class="w-5 h-5" />
+                <Icon name="light-mode" class="w-5 h-5" />
                 <span class="sr-only">Light Mode</span>
             </template>
         </ColorScheme>

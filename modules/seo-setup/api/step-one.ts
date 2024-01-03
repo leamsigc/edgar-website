@@ -1,8 +1,8 @@
 import { GetSiteMapFromUrl } from "./../helpers/getSiteMap";
 export default defineEventHandler(async (event) => {
-  const method = getMethod(event);
+  const isPost = isMethod(event, ["POST"]);
 
-  if (method !== "POST") {
+  if (!isPost) {
     throw createError({
       statusCode: 405,
       statusMessage: "Method Not Allowed",

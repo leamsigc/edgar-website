@@ -18,9 +18,8 @@ export default defineNuxtConfig({
     "@nuxthq/studio",
     "@nuxtseo/module",
     "@nuxtjs/color-mode",
+    "nuxt-icon",
   ],
-  alias: { "@": resolve("./") },
-  components: [{ path: "@/components", prefix: "" }],
   nitro: {
     experimental: {
       openAPI: true,

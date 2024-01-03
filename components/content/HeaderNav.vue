@@ -83,13 +83,19 @@ const servicesOptions = [
 </script>
 
 <template>
-  <div class="border-b">
+  <div class="top-0 left-0 z-40 flex items-center w-full bg-white dark:bg-black sticky">
     <header class="container">
-      <div class="flex h-16 items-center px-4">
+      <div class="relative flex items-center justify-between -mx-4">
         <section>
           <LogoMain />
         </section>
-        <div class="ml-auto flex items-center space-x-4">
+        <button id="navbarToggler"
+          class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden navbarTogglerActive">
+          <span class="relative my-[6px] block h-[2px] w-[30px] bg-black dark:bg-white"></span>
+          <span class="relative my-[6px] block h-[2px] w-[30px] bg-black dark:bg-white"></span>
+          <span class="relative my-[6px] block h-[2px] w-[30px] bg-black dark:bg-white"></span>
+        </button>
+        <div class="ml-auto items-center space-x-4 hidden md:flex">
           <NavigationMenu>
             <NavigationMenuList>
               <NavLinkMain to="/about" label="About" />
