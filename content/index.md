@@ -98,10 +98,40 @@ subTitle:  What our Clients Say
 description: Testimonials from our happy clients, we are happy when our client is happy.
 items:
     -
-        desc: Small 
+        desc: Testimonials from our happy clients, we are happy when our client is happy. 
         title: Title here
         alt: Alt here
         imgSrc: /img/nav_image_1.png
+        name: Ismael Garcia
+        role: CEO
+    -
+        desc: Testimonials from our happy clients, we are happy when our client is happy. 
+        title: Title here
+        alt: Alt here
+        imgSrc: /img/nav_image_1.png
+        name: Ismael Garcia
+        role: CEO
+    -
+        desc: Testimonials from our happy clients, we are happy when our client is happy. 
+        title: Title here
+        alt: Alt here
+        imgSrc: /img/nav_image_1.png
+        name: Ismael Garcia
+        role: CEO
+    -
+        desc: Testimonials from our happy clients, we are happy when our client is happy. 
+        title: Title here
+        alt: Alt here
+        imgSrc: /img/nav_image_1.png
+        name: Ismael Garcia
+        role: CEO
+    -
+        desc: Testimonials from our happy clients, we are happy when our client is happy. 
+        title: Title here
+        alt: Alt here
+        imgSrc: /img/nav_image_1.png
+        name: Ismael Garcia
+        role: CEO
 ---
 ::
 
@@ -109,6 +139,9 @@ items:
 
 ::Gallery-image
 ---
+title:  Our gallery
+subTitle:  Latest work. 
+description: Testimonials from our happy clients, we are happy when our client is happy.
 images:
     - 
         id: 1;
@@ -186,3 +219,8 @@ images:
 
 
 
+::The-Contact
+---
+title:  "Lest's talk "
+---
+::

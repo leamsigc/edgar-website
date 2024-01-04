@@ -16,6 +16,9 @@ import lgZoom from "lightgallery/plugins/zoom";
 import "lightgallery/scss/lightgallery.scss";
 
 interface Props {
+  title: string;
+  subTitle: string;
+  description: string;
   images: Array<{
     id: number;
     src: string;
@@ -26,25 +29,15 @@ interface Props {
   }>;
 }
 const props = defineProps<Props>();
-const { images } = toRefs(props);
+const { images, title, subTitle, description } = toRefs(props);
 const plugins = [lgThumbnail, lgZoom];
-
-const onInit = (detail: any) => {
-  // if (detail) {
-  //   console.log("calling method", detail.instance);
-  //   detail.instance.openGallery();
-  // }
-};
-
-const onBeforeSlide = () => {
-  console.log("calling before slide");
-};
 </script>
 
 <template>
   <section class="max-w-screen-2xl mx-auto px-14 py-20">
-    <lightgallery :settings="{ speed: 500, plugins: plugins, pager: false, thumbnail: false }" :onInit="onInit"
-      :onBeforeSlide="onBeforeSlide" class="grid grid-cols-4 gap-5">
+    <TheTitle :title="title" :subTitle="subTitle" :description="description" />
+    <lightgallery :settings="{ speed: 500, plugins: plugins, pager: false, thumbnail: false }"
+      class="grid grid-cols-4 gap-5">
       <a v-for="item in images" :key="item.id" :data-lg-size="item.size" class="gallery-item" :data-src="item.src"
         :data-tweet-text="item.alt" :data-sub-html="item.html">
         <img class="img-responsive" :src="item.thumb" :alt="item.alt" />
