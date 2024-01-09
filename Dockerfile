@@ -1,0 +1,21 @@
+FROM node:18.19-alpine as serve
+# RUN curl -sL https://unpkg.com/@pnpm/self-installer | node
+# RUN corepack enable
+RUN npm install -g pnpm
+
+WORKDIR  /usr/app/frontend
+
+COPY . .
+RUN npm config set registry https://registry.npmjs.org/
+RUN pnpm i --ignore-scripts --unsafe-perm
+ENV PATH  /usr/app/frontend/node_modules/.bin:$PATH
+RUN pnpm  build-prod
+
+
+ENV PORT=$PORT
+
+COPY --from=serve /src/.output /src/.output
+# Optional, only needed if you rely on unbundled dependencies
+# COPY --from=build /src/node_modules /src/node_modules
+
+CMD [ "node", ".output/server/index.mjs" ]
