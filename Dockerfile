@@ -9,7 +9,7 @@ COPY . .
 RUN npm config set registry https://registry.npmjs.org/
 RUN pnpm i --ignore-scripts --unsafe-perm
 ENV PATH  /usr/app/frontend/node_modules/.bin:$PATH
-RUN pnpm  build-prod
+RUN pnpm  build
 
 
 ENV PORT=$PORT
@@ -17,5 +17,5 @@ ENV PORT=$PORT
 COPY --from=serve /src/.output /src/.output
 # Optional, only needed if you rely on unbundled dependencies
 # COPY --from=build /src/node_modules /src/node_modules
-
+ENV NODE_ENV=production
 CMD [ "node", ".output/server/index.mjs" ]

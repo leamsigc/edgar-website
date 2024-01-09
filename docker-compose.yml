@@ -20,32 +20,45 @@ services:
       - "8080:80"
       - "9443:443"
     volumes:
-      - ./traefik_data:/letsencrypt
+      - ../traefik_data:/letsencrypt
       - /var/run/docker.sock:/var/run/docker.sock:ro
 
-  site:
-    depends_on:
-      - traefik
+  db:
+    image: postgres:14.1-alpine
+    environment:
+      - POSTGRES_USER=db_user
+      - POSTGRES_PASSWORD=password
+      - POSTGRED_DB=users
+    # We don't have to expose this port because the containers communicate inside the docker network
     ports:
-      - "127.0.0.1:3000:3000"
-    labels:
-      - traefik.enable=true
-      - traefik.http.routers.site.rule=Host(`${SUBDOMAIN}.${DOMAIN_NAME}`)
-      - traefik.http.routers.site.tls=true
-      - traefik.http.routers.site.entrypoints=web,websecure
-      - traefik.http.routers.site.tls.certresolver=mytlschallenge
-      - traefik.http.middlewares.site.headers.SSLRedirect=true
-      - traefik.http.middlewares.site.headers.STSSeconds=315360000
-      - traefik.http.middlewares.site.headers.browserXSSFilter=true
-      - traefik.http.middlewares.site.headers.contentTypeNosniff=true
-      - traefik.http.middlewares.site.headers.forceSTSHeader=true
-      - traefik.http.middlewares.site.headers.SSLHost=${DOMAIN_NAME}
-      - traefik.http.middlewares.site.headers.STSIncludeSubdomains=true
-      - traefik.http.middlewares.site.headers.STSPreload=true
-      - traefik.http.routers.site.middlewares=n8n@docker
-    build:
-      dockerfile: Dockerfile
-      context: .
+     - '5432:5432'
+    volumes: 
+      - ../db:/var/lib/postgresql/data
+  
+  # site:
+  #   depends_on:
+  #     - traefik
+  #     - db
+  #   ports:
+  #     - "3000:3000"
+  #   labels:
+  #     - traefik.enable=true
+  #     - traefik.http.routers.site.rule=Host(`${SUBDOMAIN}.${DOMAIN_NAME}`)
+  #     - traefik.http.routers.site.tls=true
+  #     - traefik.http.routers.site.entrypoints=web,websecure
+  #     - traefik.http.routers.site.tls.certresolver=mytlschallenge
+  #     - traefik.http.middlewares.site.headers.SSLRedirect=true
+  #     - traefik.http.middlewares.site.headers.STSSeconds=315360000
+  #     - traefik.http.middlewares.site.headers.browserXSSFilter=true
+  #     - traefik.http.middlewares.site.headers.contentTypeNosniff=true
+  #     - traefik.http.middlewares.site.headers.forceSTSHeader=true
+  #     - traefik.http.middlewares.site.headers.SSLHost=${DOMAIN_NAME}
+  #     - traefik.http.middlewares.site.headers.STSIncludeSubdomains=true
+  #     - traefik.http.middlewares.site.headers.STSPreload=true
+  #     - traefik.http.routers.site.middlewares=n8n@docker
+  #   build:
+  #     dockerfile: Dockerfile
+  #     context: .
       
 volumes:
   traefik_data:

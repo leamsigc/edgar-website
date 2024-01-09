@@ -8,6 +8,5 @@ RUN npm install -g pnpm
 WORKDIR  /usr/app/frontend
 COPY . .
 RUN pnpm i
-CMD [ "pnpm", "dev" ]
 EXPOSE 3000
 
