@@ -1,0 +1,9 @@
+- [ ] Set up docker container for the database for the local development 
+- [ ] Set up the database with prisma
+- [ ] Set up the project with lucia auth 
+- [ ] Set up the user registration 
+- [ ] Set up email confirmation 
+- [ ] Set user registration with google
+- [ ] Set up the user login 
+- [ ] Set up global auth pages 
+- [ ] Set up admin user view
